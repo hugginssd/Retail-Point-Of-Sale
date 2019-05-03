@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="987.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="DAL.MainController">
     <stylesheets>
         <URL value="@/UI/CSS/main.css" />
     </stylesheets>
+   <children>
+      <VBox layoutX="2.0" prefHeight="304.0" prefWidth="978.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="978.0">
+               <children>
+                  <Button fx:id="btnProducts" mnemonicParsing="false" prefHeight="32.0" prefWidth="160.0" text="Products" />
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="160.0" text="Customers" />
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="160.0" text="Fullfillment" />
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="160.0" text="Payments" />
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="180.0" text="Invoice" />
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="160.0" text="Reports" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>
